@@ -223,8 +223,7 @@ def do_nms(boxes_, nms_thresh, obj_thresh):
 def draw_boxes(image_, boxes, labels):
     image = image_.copy()
     image_w, image_h = image.size
-    font = ImageFont.truetype(font='/usr/share/fonts/truetype/liberation/LiberationMono-Regular.ttf',
-                    size=np.floor(3e-2 * image_h + 0.5).astype('int32'))
+    font = ImageFont.load_default()
     thickness = (image_w + image_h) // 300
 
     # Generate colors for drawing bounding boxes.
