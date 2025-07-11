@@ -1,20 +1,7 @@
-import pkg_resources
-
-imported_libraries = [
-    'tensorflow',
-    'matplotlib',
-    'Pillow', # PIL is part of Pillow
-    'numpy',
-    'keras',
-    'opencv-python', # cv2 is part of opencv-python
-    'streamlit',
-    'pyngrok'
-]
-
-with open('requirements.txt', 'w') as f:
-    for lib in imported_libraries:
-        try:
-            version = pkg_resources.get_distribution(lib).version
-            f.write(f"{lib}=={version}\n")
-        except pkg_resources.DistributionNotFound:
-            f.write(f"# {lib} not found in environment\n")
+keras==3.10.0
+matplotlib==3.10.3
+numpy==1.26.4
+Pillow==11.3.0
+streamlit==1.46.1
+tensorflow==2.18.1
+opencv-python-headless
