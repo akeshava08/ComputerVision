@@ -15,7 +15,7 @@ from PIL import ImageDraw, ImageFont
 
 anchors = [[[116,90], [156,198], [373,326]], [[30,61], [62,45], [59,119]], [[10,13], [16,30], [33,23]]]
 
-DATA_ROOT = '/content/ComputerVision/content/data/'
+DATA_ROOT = '/content/data/'
 
 model_path = os.path.join(DATA_ROOT, 'yolo_weights.h5')
 
