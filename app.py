@@ -5,7 +5,7 @@ from PIL import Image
 # Your Streamlit app goes here!
 st.title('Traffic Detection with Computer Vision')
 
-uploaded_file = st.file_uploader("Upload an image", type=["jpg", "png", "jpeg"])
+uploaded_file = st.file_uploader("Upload an image with cars/traffic", type=["jpg", "png", "jpeg"])
 
 if uploaded_file is not None:
     image = Image.open(uploaded_file) # Use Image.open to open the image
